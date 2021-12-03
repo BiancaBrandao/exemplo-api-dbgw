@@ -1,0 +1,28 @@
+@url = https://8080-scarlet-ant-tvcyfnco.ws-us21.gitpod.io
+
+###
+GET {{url}}/filmes
+
+###
+POST {{url}}/filmes
+Content-Type: application/json
+
+{
+    "titulo" : "Exemplo"
+}
+
+###
+PUT {{url}}/filmes/4
+Content-Type: application/json
+
+{
+    "titulo" : "Ghostbusters"
+}
+
+###
+DELETE {{url}}/filmes
+Content-Type: application/json
+
+{
+    "id" : 4
+}
